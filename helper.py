@@ -13,7 +13,7 @@ AOC_COOKIE = secrets["AOC_COOKIE"]
 YEAR = secrets["YEAR"]
 
 
-def get_input(day: int):
+def get_input(day: int, part=None):
     req = requests.get(
         f"https://adventofcode.com/{YEAR}/day/{day}/input",
         headers={"cookie": "session=" + AOC_COOKIE},
